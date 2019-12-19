@@ -8,15 +8,16 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 		$headers = array();
 		$headers[] = 'Content-Type: application/json';
 		$headers[] = 'X-Auth-Key: '.$_POST['authKey'];
-		$headers[] = "X-Auth-Email: {$_POST['authEmail']}";
+		$headers[] = 'X-Auth-Email: '.$_POST['authEmail'];
 		curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
 		$result = curl_exec($ch);
 		if (curl_errno($ch)) {
 			echo 'Error:' . curl_error($ch);
+		}else{
+			curl_close($ch);
+			header("Content-Type: application/json; charset=utf-8");
+			echo $result;
 		}
-		curl_close($ch);
-		header("Content-Type: application/json; charset=utf-8");
-		echo $result;
 	}else{
 		echo "you have no permissions";
 	}

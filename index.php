@@ -25,6 +25,8 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link active" href="./">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="./dns_records.php">Dns Records</a>
+          <a class="nav-item nav-link" href="./countryFlags.php">Country Flags</a>
+          <a class="nav-item nav-link" href="./manageCloudflareFlags.php">Manage Cloudflare Flags</a>
         </div>
       </div>
     </nav>

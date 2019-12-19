@@ -30,6 +30,8 @@
 					<?php else: ?>
 					<a class="nav-item nav-link active" href="./tips.php">Tips<span class="sr-only">(current)</span></a>
 					<?php endif; ?>
+					<a class="nav-item nav-link" href="./countryFlags.php">Country Flags</a>
+					<a class="nav-item nav-link" href="./manageCloudflareFlags.php">Manage Cloudflare Flags</a>
 				</div>
 			</div>
 		</nav>
