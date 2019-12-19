@@ -21,8 +21,8 @@ PHP 5.6
 ### Instalando
 
 ```
-Basta ter um servidor web rodando com o PHP 5.6 ou superior! 
-Tendo isso copie os arquivos desse repositorio para pasta public do seu servidor web e pronto! basta acessar!
+Basta ter um servidor web rodando com o PHP 5.6 ou superior e bando de dados mysql! 
+Tendo isso copie os arquivos desse repositorio para pasta public do seu servidor web, importe o cfapi.sql em sua base de dados, configure o arquivo connection.php com os dados do seu banco de dados! e pronto! basta acessar!
 ```
 
 
